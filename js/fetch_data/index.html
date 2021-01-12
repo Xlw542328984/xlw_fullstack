@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMLHttpRequest</title>
+</head>
+<body>
+    <div class="users"></div>
+    <script>
+        //
+        //
+        //主动去请求数据的API
+        //fetch
+        const oUsers = document.getElementById('users');
+        let httpResuest;
+        // 浏览器嗅探
+        if(window.XMLHttpRequest) {
+            // 让前端可以主动找后端要数据，带来了一个前端时代，
+            // 后端去完数据后，套个页面
+            //必考
+            // XML是类似json的数据格式 html <users>
+                // <Users> </Users>
+                // 主动发出请求 http 请求并期待返回  
+                // json 发明的比js晚了好多
+                httpResuest = new XMLHttpRequest();//数据实例请求
+
+        }else if (window.ActiveXObject)
+        {
+            //ie发明    
+            httpResuest = new ActiveXObject("Microsoft.XMLHTTP")
+        }
+        //打开一个js的请求通道
+        //只有通过a标签通过链接的方式 才算向服务器有发送一个请求
+        httpResuest.open("GET", "http://localhost:3000/users", true);
+        httpResuest.send();
+    </script>
+</body>
+</html>
