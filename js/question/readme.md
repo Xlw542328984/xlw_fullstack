@@ -24,5 +24,4 @@
     container padding-let|right 把左右留出来， main 自动分配
     #L#R归为
     .column三个元素的公共类float
-
-
+    
