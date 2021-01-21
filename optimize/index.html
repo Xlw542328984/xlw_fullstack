@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM操作测试</title>
+  <!-- <link rel="stylesheet" href="./css.css"> -->
+  <script>
+    // js阻塞
+//     let oContainer = document.getElementById('container');
+//     console.log(oContainer);
+//   </script>
+// </head>
+// <body>
+//   <div id="container"></div>
+  <script>
+    //   why?怎么优化?
+    //查找元素可以提出来
+    let oContainer = document.getElementById('container')
+  for (var count = 0; count < 10000; count++) {
+    oContainer
+      .innerHTML += '<span>我是一个小测试</span>';
+  }
+  </script>
+</body>
+</html>
