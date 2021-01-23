@@ -39,4 +39,5 @@
             document.getElementById('')  巨大的开销、
             js(语言世界) -> html + css 属世界
             别的语言没有
-    
+            
+        3. 分屏加载
