@@ -1,0 +1,8 @@
+.wrapper{
+    width: 500px;
+    margin: 10px auto;
+    font-stretch: 14px;
+    background-color: #ffffff;
+    border: 1px solid pink;
+    padding: 20px;
+}
