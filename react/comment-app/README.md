@@ -1,4 +1,4 @@
-# react 官方项目脚手架 create-react-app
+# react 官方项目脚手架 create-react-app comment-app
  
  1. create-react-app  项目开发模板，快递，快速
     - src c项目的目录
