@@ -7,7 +7,7 @@ export default class CommentList extends Component {
         return ( //wxml JSX
             <div>
                 {/* json array => (通过 map) html array */}
-                评论区
+                父组件
                 {
                     this.props.comments.map(comment => <Comment comment={comment}/>)
                 }
